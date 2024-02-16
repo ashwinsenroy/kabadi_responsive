@@ -1,0 +1,1524 @@
+html {
+    font-size: 16px;
+
+}
+
+body {
+    font-size: 1rem;
+    /* Equivalent to 16px */
+    font-family: Roboto, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+h1 {
+    font-size: 1.5rem;
+    /* Equivalent to 32px (16px * 2) */
+    font-family: Roboto, sans-serif;
+
+}
+
+p {
+    font-size: 1.125rem;
+    /* Equivalent to 18px (16px * 1.125) */
+    font-family: Roboto, sans-serif;
+
+}
+
+a {
+
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+
+.header {
+
+    height: 10vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header-navbar {
+
+    height: 100%;
+    width: 94%;
+    padding: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-navbar-ul {
+
+    height: 100%;
+    width: 100%;
+    background-color: #05242a;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 3% / 50%;
+    align-items: center;
+
+}
+
+.header-navbar-ul-li-0 {
+
+    flex: 4;
+    padding: 0 3%;
+
+}
+
+.header-navbar-ul-li-0 img {
+
+    width: 35%;
+    height: 100%;
+}
+
+.header-navbar-ul-li-1 {
+
+    flex: 1;
+    padding: 0;
+    background-image: url("/images/smallgreenBackground.png");
+    background-size: cover;
+}
+
+
+.header-navbar-ul-li-2,
+.header-navbar-ul-li-3,
+.header-navbar-ul-li-4 {
+
+    flex: 1;
+    padding: 0 3%;
+
+}
+
+.header-navbar-ul-li-1 a,
+.header-navbar-ul-li-2 a,
+.header-navbar-ul-li-3 a,
+.header-navbar-ul-li-4 a {
+
+    color: white;
+
+}
+
+
+.header-navbar-ul-li-5 {
+
+    display: none;
+    height: 20%;
+    width: 10%;
+}
+
+#link-5 {
+
+    color: white;
+
+}
+
+.sidebar {
+
+    display: none;
+}
+
+.sidebar-show {
+
+    display: none;
+    height: 100vh;
+    width: 25vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.sidebar-show ul {
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.sidebar-show li {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27.5%;
+    width: 100%;
+    padding: 4% 0;
+
+}
+
+.sidebar-shows a {
+
+    color: black;
+    width: 90%;
+}
+
+#sidebar-link-1 a {
+
+    background-image: url("/images/smallgreenBackground.png");
+    background-size: cover;
+}
+
+.main {
+
+    margin-top: 1%;
+    width: 100%;
+}
+
+
+.about {
+
+    width: 100%;
+    height: 84vh;
+    background: url("/images/peoplewithcoffeeInAMeeting.svg");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0% 50%);
+    /*   clip-path: polygon(0 0,100% 0,100% 50%,50% 100%,0 50%);
+    from third pt. tweak 2nd value (for right slant) and from fifth pt.tweak 2nd value (for left slant)
+    decrease value for more slant , increase for less slant.
+    */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.about h1 {
+
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    color: white;
+    padding-left: 5%;
+    padding-right: 2%;
+    margin-top: 3%;
+}
+
+.about p {
+
+    width: 100%;
+    font-weight: normal;
+    color: white;
+    padding-left: 5%;
+    padding-right: 2%;
+    margin-top: 1%;
+}
+
+
+.goal {
+
+    width: 100%;
+    height: 100vh;
+    margin-top: 6%;
+
+}
+
+.goal-2 {
+
+    margin-top: 2%;
+}
+
+.goal-1,
+.goal-2 {
+
+    width: 100%;
+    height: 46%;
+    display: flex;
+
+}
+
+.goal-1 h1,
+.goal-2 h1 {
+
+    margin: 0;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    flex: 3;
+    height: 100%;
+    background: url("/images/equipmentPic.svg");
+    background-size: cover;
+    color: white;
+}
+
+.goal-1 h1 {
+    order: 1;
+}
+
+.goal-1 p {
+    order: 2;
+}
+
+.goal-2 p {
+    order: 1;
+}
+
+.goal-2 h1 {
+    order: 2;
+}
+
+
+.goal-1 p,
+.goal-2 p {
+
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    flex: 7;
+    height: 100%;
+    background: url("/images/greenPicBackground.svg");
+    background-size: cover;
+    color: white;
+
+}
+
+
+.certificate {
+
+    width: 100%;
+    height: 120vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.certificate h1 {
+
+    color: #595959;
+    text-align: center;
+}
+
+.certificate img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.work {
+
+    width: 100%;
+    height: 180vh;
+    background: url("/images/whatweDo.png");
+    background-size: cover;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work h1 {
+
+    height: 10%;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+.work-inner {
+
+    height: 82%;
+    /* 100%-10%-6% */
+    width: 92%;
+    /* 100%-4%-4% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+
+.work-inner-card {
+
+    width: 30%;
+    height: 50%;
+    padding: 0;
+    margin: 1%;
+    /* content width is 31.33 % */
+    background: linear-gradient(180deg, #78d347, #215206);
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.work-inner h1 {
+
+    color: white;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 5%;
+}
+
+
+.work-inner p {
+
+    color: white;
+    text-align: center;
+
+}
+
+.voting {
+
+    width: 100%;
+    height: 130vh;
+}
+
+.voting h1 {
+
+    color: #595959;
+    text-align: center;
+    height: 10%;
+    padding-top: 3%;
+    font-size: 2.2rem;
+    font-weight: 520;
+}
+
+.voting-inner {
+
+    width: 100%;
+    height: 87%;
+    background: linear-gradient(rgba(17, 55, 70, .8), #113746), url("/images/voting.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.voting-inner h1 {
+
+    color: white;
+    line-height: 1.5;
+    height: 30%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1.3rem;
+}
+
+.voting-inner-1 {
+
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5%;
+
+}
+
+
+.voting-2 {
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voting-2 h1 {
+
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    height: 2%;
+    text-align: center;
+    color: white;
+
+}
+
+.voting-2 span {
+
+    font-size: 1.8rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    height: 2%;
+    color: #56b124;
+
+}
+
+
+.voting-1,
+.voting-3 {
+
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: centre;
+    height: 100%;
+
+}
+
+
+.voting-1 button,
+.voting-3 button {
+
+    background-color: #56b124;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    flex: 4;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.voting-1 p,
+.voting-3 p {
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+    flex: 1;
+    flex-shrink: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+
+.jointeam {
+
+    width: 100%;
+    height: 40vh;
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.jointeam-1 {
+
+    background: url("/images/joiningHands.svg");
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.jointeam-1 h1 {
+
+    font-size: 2.3rem;
+    color: white;
+}
+
+.jointeam-2 {
+
+    width: 50%;
+    height: 100%;
+    background-color: #56b124;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.jointeam-2-1,
+.jointeam-2-2 {
+
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jointeam-2-1 h1 {
+
+    font-size: 1.2rem;
+    font-family: Roboto, sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.jointeam-2-2 a {
+
+    width: 30%;
+    height: 30%;
+    text-decoration: none;
+    background-color: #56b124;
+    border: 3px solid #fff;
+    border-radius: 15% / 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding-top: 3%;
+    margin: 0;
+    text-align: center;
+
+}
+
+.team {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+    color: #595959;
+    text-align: center;
+    height: 10%;
+}
+
+.team-inner {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+
+.team-card {
+    width: 30%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+
+.team-card.active {
+
+    display: flex;
+}
+
+.team-card-1 {
+    width: 100%;
+    height: 85%;
+    padding: 0;
+    margin-bottom: 1.5%;
+}
+
+.team-card-1 img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.team-card-2 {
+    width: 100%;
+    height: 15%;
+    background-color: #56b124;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-card-2 h1 {
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 2%;
+}
+
+.team-card-2 p {
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+
+}
+
+.footer {
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/equipmentPic.svg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.footer-top {
+
+    /* needs to be responsive */
+    width: 90%;
+    height: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.ul-about {
+
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+}
+
+.ul-links {
+
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.ul-contact {
+
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.ul-about li,
+.ul-links li {
+
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ul-about h1,
+.ul-links h1 {
+
+    color: #56b124;
+    font-size: 1.4rem;
+    height: 20%;
+    /* means 20% of 70% */
+    width: 100%;
+
+}
+
+.ul-contact h1 {
+
+    color: #56b124;
+    font-size: 1.4rem;
+    height: 20%;
+    width: 100%;
+
+}
+
+.ul-contact li {
+
+    height: 33.33%;
+    width: 100%;
+    padding: 0;
+}
+
+.ul-about a,
+.ul-links a {
+
+    color: white;
+    font-size: 1.2rem;
+    line-height: 0.8;
+    height: 100%;
+    width: 100%;
+}
+
+.ul-contact a {
+
+    color: white;
+    font-size: 1.2rem;
+    line-height: 0.8;
+    height: 100%;
+    width: 60%;
+}
+
+.ul-contact p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul-contact span {
+
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    height: 50%;
+    width: 80%;
+
+}
+
+.ul-contact svg {
+
+    width: 8%;
+    height: 100%;
+    color: white;
+}
+
+
+.footer-bottom {
+
+    width: 50%;
+    height: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom h1 {
+
+    text-align: center;
+    color: #56b124;
+    font-weight: 600;
+    height: 50%;
+    width: 100%;
+}
+
+.footer-icons {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+}
+
+.footer-icons a {
+
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons svg {
+
+    width: 50%;
+    height: 50%;
+    color: white;
+}
+
+
+.footer-terms {
+
+    width: 100%;
+    height: 60px;
+    background-color: #56b124;
+}
+
+.footer-terms p {
+
+    width: 100%;
+    height: 94%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+@media screen and (max-width : 1024px) {
+
+    .header-navbar {
+
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header-navbar-ul {
+
+        width: 100%;
+        border-radius: 0;
+    }
+
+}
+
+
+@media screen and (max-width : 1024px) and (min-width : 480px) {
+
+    .work-inner-card {
+
+        width: 40%;
+        height: 33.33%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .header-navbar {
+
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header-navbar-ul {
+
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .header-navbar-ul-li-0 {
+
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    .header-navbar-ul-li-1,
+    .header-navbar-ul-li-2,
+    .header-navbar-ul-li-3,
+    .header-navbar-ul-li-4 {
+
+        display: none;
+    }
+
+    .header-navbar-ul-li-5 {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar-show {
+        display: block;
+    }
+
+
+}
+
+@media screen and (min-width : 480px) and (max-width : 870px) {
+
+    /* decrease large space btw certificate and work div's */
+
+    .certificate {
+
+        height: 50%;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width : 480px) {
+
+    /* make goal section responsive below 400px width  */
+    .certificate {
+
+        height: 50%;
+        margin-top: 25%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+    .goal {}
+
+    .goal-1 {
+        flex-direction: column;
+    }
+
+    .goal-1 p,
+    .goal-2 p {
+        font-size: 1.5rem;
+    }
+
+    .goal-1 h1,
+    .goal-2 h1 {
+
+        font-size: 1.7rem;
+    }
+
+    .goal-2 {
+
+        flex-direction: column;
+        margin-top: 12%;
+        margin-bottom: 10%;
+    }
+
+    .goal-2 p {
+        order: 2;
+    }
+
+    .goal-2 h1 {
+        order: 1;
+    }
+
+    .work {
+
+        background: none;
+        background-color: #EEEEEE;
+        /* earlier the work card accomodated 3 rows of 3 div's, now when all
+        6 div's are in each row, then extra ht. added will be 3*div's ht.
+        we need to add this to ur outer container, so that it can accomate all
+        elements nicely. 
+        
+        */
+        height: calc(100% + ((0.82 *180vh)*0.3));
+
+    }
+
+    .work h1 {
+
+        padding: 0;
+        color: #595959
+    }
+
+    .work-inner-card {
+
+        width: 100%;
+        height: 160%;
+    }
+
+    .work-inner-card h1,
+    p {
+        color: white
+    }
+
+    .voting {
+
+        background-image: none;
+        height: 230vh;
+    }
+
+    .voting h1 {
+
+        color: #595959;
+        font-weight: 600;
+        font-size: 2.3rem;
+        height: 5%;
+    }
+
+    .voting-inner {
+
+        background-color: #05242a;
+        height: 90%;
+    }
+
+    .voting-inner h1 {
+
+        height: 30%;
+        color: white;
+        font-size: 1.25rem;
+        padding-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+
+    }
+
+    .voting-inner-1 {
+
+        height: 60%;
+    }
+
+    .voting-1 {
+
+        width: 90%;
+        height: 40%;
+        order: 2;
+    }
+
+    .voting-1 button {
+
+        height: 90%;
+        width: 70%;
+
+    }
+
+    .voting-1 p {
+
+        height: 10%;
+    }
+
+
+    .voting-2 {
+
+        width: 90%;
+        height: 20%;
+        order: 1;
+
+    }
+
+    .voting-2 h1 {
+
+        font-size: 2.2rem;
+    }
+
+    .voting-2 span {
+
+        font-size: 1.8rem;
+    }
+
+    .voting-3 {
+
+        width: 90%;
+        height: 40%;
+        order: 3;
+    }
+
+    .voting-3 button {
+
+        height: 90%;
+        width: 70%;
+
+    }
+
+    .voting-3 p {
+
+        height: 10%;
+
+    }
+
+    .jointeam-1 {
+
+        width: 100%;
+        height: 30%;
+    }
+
+    .jointeam-1 h1 {
+
+        color: white;
+    }
+
+    .jointeam-2 {
+
+        width: 100%;
+        height: 70%;
+    }
+
+    .jointeam-2 h1 {
+
+        color: white;
+    }
+
+    .jointeam-2 a {
+
+        color: white;
+        height: 40%;
+    }
+
+    /* responsiveness for footer */
+    .ul-about,
+    .ul-links,
+    .ul-contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ul-about a {
+
+        line-height: 1.5;
+    }
+
+    .ul-links a {
+
+        line-height: 1.5;
+    }
+
+
+    .ul-contact p {
+
+        width: 60%;
+        line-height: 1.5;
+    }
+
+    .ul-contact li {
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer {
+
+        height: calc(100% + (4*(60/100) * 70vh));
+    }
+
+    /* here 100% is ht. of outermost container and 
+      0.66*100*70vh is ht. of the 2 divs that wrapped in the next rows.
+    */
+
+
+
+}
+
+@media screen and (min-width : 480px) and (max-width : 768px) {
+
+    /* responsiveness for footer */
+    .ul-about,
+    .ul-links {
+
+
+        width: 50%;
+        /* when a div comes down to accomodate it, 
+        we must increase container height by the div's height, remember to add height to outermost container
+        otherwise if add it to just the imediate container only it's height will increase whole other parts
+        will get squuezed up , so it's a good trick to add height to the outermost container which
+        on increase will distribute increase on all it's parts. */
+    }
+
+    .footer {
+
+        height: calc(100% + ((60/100) * 70vh));
+
+    }
+
+    /* here 100% is ht. of outermost container and 
+         0.66*100*70vh is ht. of the div that wrapped in the next row.
+        here 50% is div's height that comes down to new row */
+
+
+
+    /* responsiveness for footer */
+    .ul-about,
+    .ul-links,
+    .ul-contact {
+
+        text-align: center;
+    }
+
+    .ul-about a {
+
+        line-height: 1.8;
+    }
+
+    .ul-links a {
+
+        line-height: 1.8;
+    }
+
+
+    .ul-contact p {
+
+        width: 60%;
+        line-height: 1.8;
+    }
+
+    .ul-contact {
+
+        width: 100%;
+    }
+
+    .ul-contact li {
+
+        padding-left: 30%;
+        padding-right: 26%;
+    }
+
+    .footer {
+
+        height: calc(100% + ((60/100) * 70vh));
+
+    }
+
+    /* here 100% is ht. of outermost container and 
+      0.66*100*70vh is ht. of the 2 divs that wrapped in the next rows.
+     */
+}
+
+
+
+@media screen and (min-width : 260px) and (max-width : 332px) {
+
+    /*responsiveness for footer bottom icons */
+    .footer-bottom a {
+
+        width: 50%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width : 150px) and (max-width : 259px) {
+
+    /*responsiveness for footer bottom icons */
+    /*responsiveness for footer bottom icons */
+    .footer-bottom a {
+
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width : 480px) and (max-width : 530px) {
+
+    .voting {
+
+        height: 180vh;
+    }
+}
+
+@media screen and (min-width : 300px) and (max-width : 399px) {
+
+    .about {
+        height: 940px;
+        clip-path: polygon(0 0, 100% 0, 100% 72%, 40% 78%, 0% 95%);
+       
+    }
+
+    .about p {
+
+        font-size: 1.2rem;
+        line-height: 1.76;
+    }
+
+}
+
+@media screen and (min-width : 400px) and (max-width : 499px) {
+
+
+    .about {
+        height: 700px;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 40% 80%, 0% 80%);
+       
+    }
+
+    .about p {
+
+        font-size: 1.2rem;
+        line-height: 1.76;
+    }
+
+    .jointeam-1 {
+
+        width: 47%;
+    }
+
+    .jointeam-2 {
+
+        width: 53%;
+    }
+
+    .jointeam-2 a {
+
+        color: white;
+        height: 40%;
+        width: 40%;
+        border-radius: 20% / 50%;
+    }
+
+}
+
+@media screen and (min-width : 500px) and (max-width : 599px) {
+
+    .about {
+        height: 610px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 40% 80%, 0% 60%);
+    }
+
+    .about p {
+
+        font-size: 1.3rem;
+    }
+
+    .jointeam-1 {
+
+        width: 47%;
+    }
+
+    .jointeam-2 {
+
+        width: 53%;
+    }
+
+    .jointeam-2 a {
+
+        color: white;
+        height: 40%;
+        width: 40%;
+        border-radius: 20% / 50%;
+    }
+
+}
+
+@media screen and (min-width : 600px) and (max-width : 699px) {
+
+    .about {
+        height: 590px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 40% 80%, 0% 60%);
+    }
+
+
+    .about p {
+
+        font-size: 1.3rem;
+    }
+
+    .jointeam-2 a {
+
+        color: white;
+        height: 40%;
+        width: 40%;
+        border-radius: 20% / 50%;
+    }
+}
+
+@media screen and (min-width : 700px) and (max-width : 799px) {
+
+    .about {
+        height: 570px;
+        clip-path: polygon(0 0, 100% 0, 100% 72%, 20% 100%, 0% 75%);
+    }
+
+    .about p{
+
+        font-size: 1.3rem;
+    }
+
+    .jointeam-2 a {
+
+        color: white;
+        height: 40%;
+        width: 40%;
+        border-radius: 20% / 50%;
+    }
+}
+
+@media screen and (min-width : 800px) and (max-width : 899px) {
+
+    .about {
+        height: 550px;
+        clip-path: polygon(0 0, 100% 0, 100% 72%, 30% 100%, 0% 75%);
+    }
+
+    .jointeam-2 a {
+
+        color: white;
+        height: 40%;
+        width: 40%;
+        border-radius: 20% / 50%;
+    }
+}
+
+@media screen and (min-width : 900px) and (max-width : 999px) {
+
+    .about {
+        height: 500px;
+        clip-path: polygon(0 0, 100% 0, 100% 72%, 40% 100%, 0% 75%);
+    }
+
+    .jointeam-2 a {
+
+        color: white;
+        height: 40%;
+        width: 40%;
+        border-radius: 17% / 50%;
+    }
+}
+
+@media screen and (min-width : 1000px) and (max-width : 1099px) {
+
+    .about {
+        height: 480px;
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0% 50%);
+    }
+}
+
+@media screen and (min-width : 1100px) and (max-width : 1199px) {
+
+    .about {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+}
+
+@media screen and (min-width : 1200px) and (max-width : 1299px) {}
